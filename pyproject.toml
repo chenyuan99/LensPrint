@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lensprint"
+version = "0.1.0"
+description = "Transform photos with blurred borders and EXIF overlays."
+readme = "README.md"
+authors = [
+    { name = "Yuan Chen", email = "yuan.chen@offerplus.io" }
+]
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+dependencies = [
+    "pillow",
+    "opencv-python",
+    "piexif"
+]
+keywords = ["photo", "exif", "border", "blur", "photography"]
+
+[project.urls]
+Homepage = "https://github.com/chenyuan99/lensprint"
