@@ -1,6 +1,7 @@
 """Basic tests for lensprint package."""
 
 import pytest
+
 from lensprint import create_blurred_frame_with_text, extract_exif_info
 
 
@@ -12,11 +13,11 @@ def test_imports():
 
 def test_extract_exif_info_with_invalid_path():
     """Test extract_exif_info with non-existent file."""
-    with pytest.raises(Exception):
+    with pytest.raises((FileNotFoundError, OSError)):
         extract_exif_info("nonexistent.jpg")
 
 
 def test_create_blurred_frame_with_text_with_invalid_path():
     """Test create_blurred_frame_with_text with non-existent file."""
-    with pytest.raises(Exception):
+    with pytest.raises((FileNotFoundError, OSError)):
         create_blurred_frame_with_text("nonexistent.jpg", "output.jpg")
