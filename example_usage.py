@@ -1,8 +1,8 @@
-from lensprint import create_blurred_frame_with_text, extract_exif_info
+from lensprint import create_blurred_frame_with_text
 
-image_file = 'sample.JPG'  # Replace with your image path
-blurred = 'output.jpg'
-final = 'final.jpg'
+image_file = "sample.JPG"  # Replace with your image path
+blurred = "output.jpg"
+final = "final.jpg"
 
 # Add blurred border
 temp_blur = create_blurred_frame_with_text(image_file, final)

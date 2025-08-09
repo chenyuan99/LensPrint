@@ -1,5 +1,9 @@
 # 📸 LensPrint
 
+[![CI](https://github.com/chenyuan99/lensprint/actions/workflows/ci.yml/badge.svg)](https://github.com/chenyuan99/lensprint/actions/workflows/ci.yml)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **LensPrint** is a Python-based tool that transforms your photos into beautiful, editorial-style visuals by adding soft blurred borders and embedding camera shooting parameters (EXIF data) into the final image. Inspired by mobile apps like 光影边框, this tool is perfect for photographers who want to stylize their work for social media, blogs, or portfolios.
 
 ---
@@ -54,6 +58,32 @@ Or use the provided command-line interface (coming soon!).
 - [Pillow](https://python-pillow.org/)
 - [piexif](https://pypi.org/project/piexif/)
 - [OpenCV](https://opencv.org/)
+
+---
+
+## 🔧 Development
+
+### Setup
+```bash
+# Clone the repository
+git clone https://github.com/chenyuan99/lensprint.git
+cd lensprint
+
+# Install in development mode with dev dependencies
+pip install -e ".[dev]"
+```
+
+### Code Quality
+```bash
+# Run linter
+ruff check .
+
+# Format code
+ruff format .
+
+# Run tests
+pytest tests/ -v
+```
 
 ---
 
